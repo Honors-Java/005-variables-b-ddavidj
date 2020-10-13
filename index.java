@@ -1,3 +1,6 @@
+int x = 230;
+int y = 500;
+int r = 300;
 void setup() {
 	size(500, 500);
 }
@@ -16,8 +19,17 @@ void draw() {
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
 
-  background(255);
+  background(0);
   stroke(0);
+
+
+  ellipse(x,y,r,r);
+ x--;
+  y--;
+  r = r - 1;
+
+  
+
 
 
   
